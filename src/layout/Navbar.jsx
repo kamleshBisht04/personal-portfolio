@@ -14,8 +14,8 @@ const Navbar = () => {
   const [isMoblieMenuOpen, setIsMoblieMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 right-0 left-0 bg-transparent py-5">
-      <nav className="container mx-auto flex items-center justify-between">
+    <header className="fixed top-0 right-0 left-0 bg-transparent py-5 z-50">
+      <nav className="container mx-auto flex items-center justify-between pl-6 md:px-10 lg:px-20 xl:px-24 " >
         <a
           href="#"
           className="hover:text-primary text-xl font-bold tracking-tight"
