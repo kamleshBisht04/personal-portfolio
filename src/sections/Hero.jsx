@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
+import AnimatedBorderButton from "@/components/AnimatedBorderButton";
 import { MoveRight, Download } from "lucide-react";
-import AnimatedBorderButton from "../components/AnimatedBorderButton";
+import { socialLinks } from "@/constant/const";
 
 const Hero = () => {
   return (
@@ -32,7 +33,7 @@ const Hero = () => {
         ))}
       </div>
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
+      <div className="container-custom relative z-10 mx-auto px-6 pt-32 pb-20">
         <div className="gap:12 grid items-center lg:grid-cols-2">
           {/* left column -Text section */}
           <div className="space-y-8">
@@ -49,11 +50,9 @@ const Hero = () => {
                 <span className="text-primary glow-text"> React</span>
               </h1>
               <p className="text-muted-foreground animate-fade-in animation-delay-200 max-w-lg text-lg">
-                Hi, I'm Kamalesh — a passionate React Developer and Frontend
-                Enthusiast. As a fresher, I focus on building responsive and
-                user-friendly web applications using React and modern web
-                technologies. I'm constantly learning and improving my skills to
-                create impactful digital experiences.
+                Hi, I'm Kamlesh — a passionate Software Engineer specializing in
+                React and JavaScript. I focus on building responsive, scalable,
+                and modern web applications with clean and efficient code.
               </p>
             </div>
             {/* CTAs */}
@@ -67,8 +66,45 @@ const Hero = () => {
                 Download CV
               </AnimatedBorderButton>
             </div>
+            {/* social links */}
+            <div className="animate-fade-in animation-delay-400 flex items-center gap-4">
+              <span className="text-muted-foreground text-sm">Follow me: </span>
+              {socialLinks.map((social, index) => (
+                <a
+                  className="glass hover:bg-primary/10 hover:text-primary rounded-full p-2 transition-all duration-300"
+                  key={index}
+                  href={social.href}
+                >
+                  {<social.icon className="h-4.5 w-4.5" />}
+                </a>
+              ))}
+            </div>
           </div>
           {/* right column - profile section */}
+          <div className="animation-fade-in relative">
+            {/* profile image*/}
+            <div className="animate-fade-in mx-w-xs animation-delay-200 relative mx-auto max-w-[18rem]">
+              <div className="glass glass-border glow-border relative rounded-2xl p-2">
+                <div className="from-primary/20 to-primary/10 absolute inset-0 animate-pulse rounded-3xl bg-gradient-to-br via-transparent" />
+
+                <img
+                  src="/Profile-photo.jpg"
+                  alt="kamlesh bisht"
+                  className="aspect-4/5 w-full rounded-2xl object-cover"
+                />
+                {/* Floating Badge */}
+                <div className="glass animate-float absolute -right-4 -bottom-4 rounded-xl px-4 py-1">
+                  <div className="flex items-center gap-3">
+                    <div className="h-2.5 w-2.5 animate-pulse rounded-full bg-green-500" />
+                    <span className="text-foreground text-sm font-medium">
+                      Available for work
+                    </span>
+                  </div>
+                </div>
+                {/* status Badge */}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
