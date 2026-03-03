@@ -3,7 +3,7 @@ import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import Project from "@/sections/Project";
 import Contact from "@/sections/Contact";
-import Skills from "@/sections/Skills";
+import Skills from "./sections/Skills";
 
 const App = () => {
   return (
@@ -12,8 +12,8 @@ const App = () => {
       <main>
         <Hero />
         <About />
-        <Skills />
         <Project />
+        <Skills />
         <Contact />
       </main>
     </div>

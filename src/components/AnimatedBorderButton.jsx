@@ -1,6 +1,6 @@
 const AnimatedBorderButton = ({ children }) => {
   return (
-    <button className="border-border text-foreground hover:border-primary/50 focus-visible:ring-primary group animated-border relative overflow-visible rounded-full border bg-transparent px-8 py-4 text-lg font-medium transition-all duration-1000 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+    <button className="border-border text-foreground hover:border-primary/50 focus-visible:ring-primary group animated-border relative overflow-visible rounded-full border bg-transparent px-4 py-2 text-lg font-medium transition-all duration-1000 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-12">
       <svg
         className="download-cv-border pointer-events-none absolute top-0 left-0 h-full w-full"
         viewBox="0 0 200 60"
