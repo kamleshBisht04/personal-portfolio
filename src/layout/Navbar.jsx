@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navLinks = [
   { href: "#", lebel: "Home" },
@@ -12,9 +12,20 @@ const navLinks = [
 
 const Navbar = () => {
   const [isMoblieMenuOpen, setIsMoblieMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handalScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handalScroll);
+    return () => window.removeEventListener("scroll", handalScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 bg-transparent py-5">
+    <header
+      className={`fixed top-0 right-0 left-0 z-50 py-4 ${isScrolled ? "glass-strong" : "bg-transparent"} `}
+    >
       <nav className="container-custom mx-auto flex items-center justify-between">
         <a
           href="#"
@@ -38,7 +49,7 @@ const Navbar = () => {
         </div>
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm" >Contact</Button>
+          <Button size="sm">Contact</Button>
         </div>
         {/* mobile menu button */}
         <button
