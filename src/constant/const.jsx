@@ -1,4 +1,13 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Code2,
+  Lightbulb,
+  Rocket,
+  Users,
+} from "lucide-react";
+
 import {
   FaReact,
   FaNodeJs,
@@ -10,7 +19,6 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaChrome,
-  
 } from "react-icons/fa";
 
 import {
@@ -33,6 +41,7 @@ export const socialLinks = [
   { icon: Mail, href: "https://github.com/kamleshBisht04" },
 ];
 
+// hero section data 
 export const skillsData = [
   // ---------------- FRONTEND ----------------
   { name: "React", icon: FaReact, color: "#61DAFB", category: "Frontend" },
@@ -96,3 +105,31 @@ export const skillsData = [
   },
 ];
 export const categories = ["Frontend", "Backend", "Database", "Tools"];
+
+// for about section
+
+export const highlights = [
+  {
+    icon: Code2,
+    title: "Clean Code",
+    description:
+      "Writing maintainable, scalable code that stands the test of time.",
+  },
+  {
+    icon: Rocket,
+    title: "Performance",
+    description:
+      "Optimizing for speed and delivering lightning-fast user experiences.",
+  },
+  {
+    icon: Users,
+    title: "Collaboration",
+    description: "Working closely with teams to bring ideas to life.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Innovation",
+    description:
+      "Staying ahead with the latest technologies and best practices.",
+  },
+];

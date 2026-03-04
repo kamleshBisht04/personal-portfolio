@@ -67,13 +67,14 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <a
                 href={link.href}
+                onClick={() => setIsMoblieMenuOpen(false)}
                 key={index}
                 className="text-muted-foreground hover:text-foreground py-2 text-lg"
               >
                 {link.lebel}
               </a>
             ))}
-            <Button>Contact</Button>
+            <Button onClick={() => setIsMoblieMenuOpen(false)}>Contact</Button>
           </div>
         </div>
       )}
