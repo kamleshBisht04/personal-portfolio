@@ -45,10 +45,12 @@ const Hero = () => {
             </div>
             {/* CTAs */}
             <div className="animate-fade-in animation-delay-300 flex flex-wrap gap-6">
-              <Button>
-                Contact Me
-                <MoveRight className="h-5 w-5" />
-              </Button>
+              <a href="#contact">
+                <Button>
+                  Contact Me
+                  <MoveRight className="h-5 w-5" />
+                </Button>
+              </a>
               <AnimatedBorderButton>
                 <Download className="h-5 w-5" />
                 Download CV
@@ -57,7 +59,7 @@ const Hero = () => {
             {/* social links */}
             <div className="animate-fade-in animation-delay-400 flex items-center gap-4">
               <span className="text-muted-foreground text-sm">Follow me: </span>
-              <Social/>
+              <Social />
             </div>
           </div>
           {/* right column - profile section */}
@@ -109,7 +111,7 @@ const Hero = () => {
             <div className="animate-marquee flex">
               {[...skillsData, ...skillsData].map((skill, idx) => (
                 <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-muted-foreground/50 hover:text-muted-foreground animate-marquee flex flex-wrap items-center gap-2 text-xl font-semibold transition-colors ">
+                  <span className="text-muted-foreground/50 hover:text-muted-foreground animate-marquee flex flex-wrap items-center gap-2 text-xl font-semibold transition-colors">
                     <span>{<skill.icon />}</span>
                     <p>{skill.name}</p>
                   </span>

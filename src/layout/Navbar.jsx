@@ -1,10 +1,8 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
 import { navLinks } from "@/constant/const";
 import { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import Logo from "@/components/Logo";
-
-
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -47,7 +45,10 @@ const Navbar = () => {
         {/* Desktop CTA */}
         <div className="hidden md:block">
           <a href="#contact">
-            <Button size="sm">Hire Me</Button>
+            <Button size="sm">
+              Hire Me
+              <Mail size={16} className="text-[#F3E3D0] " />
+            </Button>
           </a>
         </div>
 

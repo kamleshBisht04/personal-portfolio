@@ -58,7 +58,7 @@ const About = () => {
             {highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="glass animate-fade-in  rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                className="glass animate-fade-in rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                 style={{ animationDelay: `${idx * 150}ms` }}
               >
                 <div className="bg-primary/10 mb-4 flex h-12 w-12 items-center justify-center rounded-full">
@@ -78,5 +78,3 @@ const About = () => {
 };
 
 export default About;
-
-

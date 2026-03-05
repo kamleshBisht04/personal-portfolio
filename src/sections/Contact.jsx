@@ -1,6 +1,31 @@
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "bb3501cd-d745-46c7-9331-d7fff858acad");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
+      if (data.success) {
+        toast.success("Thank you for your submission!");
+        event.target.reset();
+      } else {
+        toast.error(data.message);
+      }
+    } catch (error) {
+      toast.error(error.message);
+    }
+  };
+
   return (
     <section id="contact" className="relative overflow-hidden py-24">
       <div className="container-custom relative z-10">
@@ -51,31 +76,37 @@ const Contact = () => {
           </div>
 
           {/* right section  contact from*/}
-          <form className="glass space-y-2 rounded-2xl p-8">
+          <form onSubmit={onSubmit} className="glass space-y-2 rounded-2xl p-8">
             <div>
-              <labal className="text-muted-foreground text-sm">Name</labal>
+              <label className="text-muted-foreground text-sm">Name</label>
               <input
                 type="text"
+                name="Name"
                 className="focus:border-primary mt-2 w-full rounded-lg border border-white/10 bg-transparent px-4 py-3 focus:outline-none"
                 placeholder="Your Name"
+                required
               />
             </div>
 
             <div>
-              <labal className="text-muted-foreground text-sm">Email</labal>
+              <label className="text-muted-foreground text-sm">Email</label>
               <input
                 type="email"
+                name="Email"
                 className="focus:border-primary mt-2 w-full rounded-lg border border-white/10 bg-transparent px-4 py-3 focus:outline-none"
                 placeholder="your@email.com"
+                required
               />
             </div>
 
             <div>
-              <labal className="text-muted-foreground text-sm">Email</labal>
+              <label className="text-muted-foreground text-sm">Message</label>
               <textarea
+                name="Message"
                 rows={4}
                 className="focus:border-primary mt-2 w-full rounded-lg border border-white/10 bg-transparent px-4 py-3 focus:outline-none"
                 placeholder="Enter your message..."
+                required
               />
             </div>
             {/* button */}
