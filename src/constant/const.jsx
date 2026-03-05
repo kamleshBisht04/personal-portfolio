@@ -35,6 +35,14 @@ import {
   SiVite,
 } from "react-icons/si";
 
+
+export const navLinks = [
+  { href: "#", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#skill", label: "Skill" },
+];
+
 export const socialLinks = [
   { icon: Github, href: "https://github.com/kamleshBisht04" },
   { icon: Linkedin, href: "https://github.com/kamleshBisht04" },

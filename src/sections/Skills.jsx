@@ -3,7 +3,7 @@ import { categories, skillsData } from "@/constant/const";
 const Skills = () => {
   return (
     <section
-      className="container-custom animate-fade-in animation-delay-200 relative mt-16 scroll-mt-24 mb-12 overflow-hidden"
+      className="container-custom animate-fade-in animation-delay-200 relative mt-16 mb-12 scroll-mt-24 overflow-hidden"
       id="skill"
     >
       <div className="rounded-3xl border border-white/10 px-10 py-10">
@@ -11,7 +11,7 @@ const Skills = () => {
           My Technical Skills
         </h2>
 
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => (
             <div key={category}>
               <div className="mb-6 flex items-center gap-3">

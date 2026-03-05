@@ -1,9 +1,9 @@
 import Button from "@/components/Button";
 import AnimatedBorderButton from "@/components/AnimatedBorderButton";
 import { MoveRight, Download, ChevronDown } from "lucide-react";
-import { socialLinks } from "@/constant/const";
 import { skillsData } from "@/constant/const";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import Social from "../components/Social";
 
 const Hero = () => {
   return (
@@ -57,15 +57,7 @@ const Hero = () => {
             {/* social links */}
             <div className="animate-fade-in animation-delay-400 flex items-center gap-4">
               <span className="text-muted-foreground text-sm">Follow me: </span>
-              {socialLinks.map((social, index) => (
-                <a
-                  className="glass hover:bg-primary/10 hover:text-primary rounded-full p-2 transition-all duration-300"
-                  key={index}
-                  href={social.href}
-                >
-                  {<social.icon className="h-4.5 w-4.5" />}
-                </a>
-              ))}
+              <Social/>
             </div>
           </div>
           {/* right column - profile section */}

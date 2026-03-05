@@ -1,13 +1,10 @@
-import Button from "@/components/Button";
 import { Menu, X } from "lucide-react";
+import { navLinks } from "@/constant/const";
 import { useEffect, useState } from "react";
+import Button from "@/components/Button";
+import Logo from "@/components/Logo";
 
-const navLinks = [
-  { href: "#", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skill", label: "Skill" },
-];
+
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,12 +27,7 @@ const Navbar = () => {
     >
       <nav className="container-custom mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a
-          href="#"
-          className="hover:text-primary text-xl font-bold tracking-tight"
-        >
-          &lt;<span className="text-primary"> KB</span> /&gt;
-        </a>
+        <Logo />
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-1 md:flex">
