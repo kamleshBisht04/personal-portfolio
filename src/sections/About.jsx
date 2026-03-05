@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative scroll-mt-28 overflow-hidden pt-10 pb-16"
+      className="relative mt-16 scroll-mt-28 overflow-hidden pb-16"
     >
       <div className="container-custom relative z-10">
         <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -18,7 +18,7 @@ const About = () => {
 
             <h2 className="animate-fade-in text-primary animation-delay-100 text-4xl leading-tight font-bold md:text-5xl">
               Building the future,
-              <span className="font-serif text-white font-normal italic">
+              <span className="font-serif font-normal text-white italic">
                 one component at a time.
               </span>
             </h2>
@@ -58,11 +58,11 @@ const About = () => {
             {highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="glass animate-fade-in rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                className="glass animate-fade-in  rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                 style={{ animationDelay: `${idx * 150}ms` }}
               >
-                <div className="bg-primary/10 mb-4 flex h-12 w-12 items-center justify-center rounded-xl">
-                  <item.icon className="text-primary h-6 w-6  " />
+                <div className="bg-primary/10 mb-4 flex h-12 w-12 items-center justify-center rounded-full">
+                  <item.icon className="text-primary h-6 w-6" />
                 </div>
                 <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
                 <p className="text-muted-foreground text-sm">
@@ -78,3 +78,5 @@ const About = () => {
 };
 
 export default About;
+
+

@@ -133,3 +133,87 @@ export const highlights = [
       "Staying ahead with the latest technologies and best practices.",
   },
 ];
+
+
+// project data
+
+export const projects = [
+  {
+    id: 1,
+    title: "Eatigo",
+    slug: "eatigo",
+    description:
+      "A modern restaurant booking platform with real-time availability, responsive UI, and seamless reservation experience.",
+    image: "/projects/eatigo.JPG",
+    tags: ["React", "Node.js", "React-Router", "Tailwind CSS"],
+    category: "Frontend",
+    featured: true,
+    demoUrl: "https://eatigosmartdine.netlify.app/",
+    githubUrl: "https://github.com/kamleshBisht04/Eatigo",
+  },
+  {
+    id: 2,
+    title: "Intellect-quiz-app",
+    slug: "quiz-app",
+    description:
+      "An interactive quiz application with timer functionality, score tracking, and dynamic question rendering.",
+    image: "/projects/quiz-app.JPG",
+    tags: ["React", "Context API", "firebase", "Hooks", "CSS"],
+    category: "Frontend",
+    featured: false,
+    demoUrl: "https://intellect-quiz.netlify.app/",
+    githubUrl: "https://github.com/kamleshBisht04/React-quiz-app",
+  },
+  {
+    id: 3,
+    title: "WorldWise",
+    slug: "worldwise",
+    description:
+      "A travel tracking application that allows users to mark and manage visited cities with map integration.",
+    image: "/projects/worldwise.JPG",
+    tags: ["React", "Leaflet", "REST API"],
+    category: "Web App",
+    featured: false,
+    demoUrl: "https://worldwise-travelsmart.netlify.app/",
+    githubUrl: "https://github.com/kamleshBisht04/worldwise",
+  },
+  {
+    id: 4,
+    title: "Omnifood",
+    slug: "omnifood",
+    description:
+      "A fully responsive food delivery landing page built with modern UI principles and performance optimization.",
+    image: "/projects/omnifood.JPG",
+    tags: ["HTML", "CSS", "JavaScript"],
+    category: "Landing Page",
+    featured: true,
+    demoUrl: "https://omnifood-website-ui.netlify.app/",
+    githubUrl: "https://github.com/kamleshBisht04/Omnifood-Project",
+  },
+  {
+    id: 5,
+    title: "usePopcorn",
+    slug: "usepopcorn",
+    description:
+      "A movie search application integrated with an external OMDBi API, allowing users to rate and track watched movies.",
+    image: "/projects/usepopcorn.JPG",
+    tags: ["React", "Custom Hooks", "API Integration"],
+    category: "Web App",
+    featured: false,
+    demoUrl: "https://usepopcone.netlify.app/",
+    githubUrl: "https://github.com/kamleshBisht04/usePopcorn",
+  },
+  {
+    id: 6,
+    title: "Agency-ai",
+    slug: "agency-ai",
+    description:
+      "An agency landing page is a single webpage designed to present a digital agency, web agency, or marketing agency and convert visitors into clients or leads..",
+    image: "/projects/agency-ai.JPG",
+    tags: ["React", "Custom Hooks", "farmaer motion", "Tailwind css"],
+    category: "Landing page",
+    featured: false,
+    demoUrl: "https://agency-ai-page.netlify.app/",
+    githubUrl: "https://github.com/kamleshBisht04/agency.ai-",
+  },
+];

@@ -13,7 +13,7 @@ const Hero = () => {
         <img
           src="./hero-bg.jpg"
           alt="Hero image"
-          className="h-full w-full object-cover opacity-40"
+          className="h-full w-full object-cover opacity-30"
         />
         <div className="from background/20 via-background/80 to-background absolute inset-0 bg-gradient-to-b" />
       </div>
@@ -22,7 +22,7 @@ const Hero = () => {
       <ParticlesBackground />
       {/* Content */}
       <div className="container-custom relative z-10 mx-auto px-6 pt-32 pb-20">
-        <div className="gap:12 grid items-center  lg:grid-cols-2">
+        <div className="gap:12 grid items-center lg:grid-cols-2">
           {/* left column -Text section */}
           <div className="space-y-8">
             <div className="animate-fade-in">
@@ -115,9 +115,9 @@ const Hero = () => {
             <div className="from-background absolute top-0 bottom-0 left-0 z-10 w-32 bg-gradient-to-r to-transparent" />
             <div className="from-background absolute top-0 right-0 bottom-0 z-10 w-32 bg-gradient-to-l to-transparent" />
             <div className="animate-marquee flex">
-              {[...skillsData].map((skill, idx) => (
+              {[...skillsData, ...skillsData].map((skill, idx) => (
                 <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-muted-foreground/50 hover:text-muted-foreground animate-marquee flex flex-wrap items-center gap-2 text-xl font-semibold transition-colors">
+                  <span className="text-muted-foreground/50 hover:text-muted-foreground animate-marquee flex flex-wrap items-center gap-2 text-xl font-semibold transition-colors ">
                     <span>{<skill.icon />}</span>
                     <p>{skill.name}</p>
                   </span>

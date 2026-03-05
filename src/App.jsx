@@ -1,9 +1,9 @@
-import Navbar from "./layout/Navbar";
+import Navbar from "@/layout/Navbar";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
-import Project from "@/sections/Project";
 import Contact from "@/sections/Contact";
-import Skills from "./sections/Skills";
+import Skills from "@/sections/Skills";
+import  Projects  from "@/sections/Projects";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <main>
         <Hero />
         <About />
-        <Project />
+        <Projects />
         <Skills />
         <Contact />
       </main>
