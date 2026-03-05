@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { projects } from "@/constant/const";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github, Eye } from "lucide-react";
 import AnimatedBorderButton from "@/components/AnimatedBorderButton";
 import { useRef } from "react";
 
@@ -126,6 +126,7 @@ const Projects = () => {
           <div className="mt-3 text-center">
             <AnimatedBorderButton onClick={handleToggle}>
               {showAll ? "Show Less" : "View All Projects"}
+              <Eye className="h-5 w-5 text-muted-foreground" />
             </AnimatedBorderButton>
           </div>
         )}

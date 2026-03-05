@@ -3,78 +3,89 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { href: "#", lebel: "Home" },
-  { href: "#about", lebel: "About" },
-  { href: "#projects", lebel: "Projects" },
-  { href: "#skill", lebel: "Skill" },
-  { href: "#contact", lebel: "Contact" },
+  { href: "#", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#skill", label: "Skill" },
 ];
 
 const Navbar = () => {
-  const [isMoblieMenuOpen, setIsMoblieMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handalScroll = () => {
+    const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener("scroll", handalScroll);
-    return () => window.removeEventListener("scroll", handalScroll);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 right-0 left-0 z-50 py-4 ${isScrolled ? "glass-strong" : "bg-transparent"} `}
+      className={`fixed top-0 right-0 left-0 z-50 py-4 ${
+        isScrolled ? "glass-strong" : "bg-transparent"
+      }`}
     >
       <nav className="container-custom mx-auto flex items-center justify-between">
+        {/* Logo */}
         <a
           href="#"
           className="hover:text-primary text-xl font-bold tracking-tight"
         >
           &lt;<span className="text-primary"> KB</span> /&gt;
         </a>
-        {/* Desktop nav */}
+
+        {/* Desktop Navigation */}
         <div className="hidden items-center gap-1 md:flex">
           <div className="glass flex items-center gap-1 rounded-full px-2 py-1">
             {navLinks.map((link, index) => (
               <a
-                href={link.href}
                 key={index}
-                className="text-muted-foreground hover:text-foreground hover:bg-surface rounded-full px-4 py-2 text-sm"
+                href={link.href}
+                className="text-muted-foreground hover:text-foreground rounded-full px-4 py-2 text-sm transition"
               >
-                {link.lebel}
+                {link.label}
               </a>
             ))}
           </div>
         </div>
-        {/* CTA Button */}
+
+        {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Button size="sm">Contact</Button>
+          <a href="#contact">
+            <Button size="sm">Hire Me</Button>
+          </a>
         </div>
-        {/* mobile menu button */}
+
+        {/* Mobile Menu Button */}
         <button
-          onClick={() => setIsMoblieMenuOpen((prev) => !prev)}
-          className="text-foreground hover:bg-primary/5 mr-3 h-10 w-10 items-center justify-center rounded-full px-2 transition-all duration-200 active:scale-90 md:hidden"
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          className="text-foreground hover:bg-primary/5 mr-3 flex h-10 w-10 items-center justify-center rounded-full transition-all duration-200 active:scale-90 md:hidden"
         >
-          {!isMoblieMenuOpen ? <Menu size={22} /> : <X size={22} />}
+          {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </nav>
 
-      {/* mobile menu  */}
-      {isMoblieMenuOpen && (
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
         <div className="glass-strong animate-fade-in md:hidden">
           <div className="container mx-auto flex flex-col gap-4 px-8 py-6">
             {navLinks.map((link, index) => (
               <a
-                href={link.href}
-                onClick={() => setIsMoblieMenuOpen(false)}
                 key={index}
-                className="text-muted-foreground hover:text-foreground py-2 text-lg"
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-muted-foreground hover:text-foreground py-2 text-lg transition"
               >
-                {link.lebel}
+                {link.label}
               </a>
             ))}
-            <Button onClick={() => setIsMoblieMenuOpen(false)}>Contact</Button>
+
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button className="w-full">Hire Me</Button>
+            </a>
           </div>
         </div>
       )}
