@@ -41,6 +41,7 @@ export const socialLinks = [
   { icon: Mail, href: "https://github.com/kamleshBisht04" },
 ];
 
+
 // hero section data 
 export const skillsData = [
   // ---------------- FRONTEND ----------------
@@ -144,7 +145,7 @@ export const projects = [
     slug: "eatigo",
     description:
       "A modern restaurant booking platform with real-time availability, responsive UI, and seamless reservation experience.",
-    image: "/projects/eatigo.JPG",
+    image: "/projects/eatigo.jpg",
     tags: ["React", "Node.js", "React-Router", "Tailwind CSS"],
     category: "Frontend",
     featured: true,
@@ -157,7 +158,7 @@ export const projects = [
     slug: "quiz-app",
     description:
       "An interactive quiz application with timer functionality, score tracking, and dynamic question rendering.",
-    image: "/projects/quiz-app.JPG",
+    image: "/projects/quiz-app.jpg",
     tags: ["React", "Context API", "firebase", "Hooks", "CSS"],
     category: "Frontend",
     featured: false,
@@ -170,7 +171,7 @@ export const projects = [
     slug: "worldwise",
     description:
       "A travel tracking application that allows users to mark and manage visited cities with map integration.",
-    image: "/projects/worldwise.JPG",
+    image: "/projects/worldwise.jpg",
     tags: ["React", "Leaflet", "REST API"],
     category: "Web App",
     featured: false,
@@ -183,7 +184,7 @@ export const projects = [
     slug: "omnifood",
     description:
       "A fully responsive food delivery landing page built with modern UI principles and performance optimization.",
-    image: "/projects/omnifood.JPG",
+    image: "/projects/omnifood.jpg",
     tags: ["HTML", "CSS", "JavaScript"],
     category: "Landing Page",
     featured: true,
@@ -196,7 +197,7 @@ export const projects = [
     slug: "usepopcorn",
     description:
       "A movie search application integrated with an external OMDBi API, allowing users to rate and track watched movies.",
-    image: "/projects/usepopcorn.JPG",
+    image: "/projects/usepopcorn.jpg",
     tags: ["React", "Custom Hooks", "API Integration"],
     category: "Web App",
     featured: false,
@@ -209,7 +210,7 @@ export const projects = [
     slug: "agency-ai",
     description:
       "An agency landing page is a single webpage designed to present a digital agency, web agency, or marketing agency and convert visitors into clients or leads..",
-    image: "/projects/agency-ai.JPG",
+    image: "/projects/agency-ai.jpg",
     tags: ["React", "Custom Hooks", "farmaer motion", "Tailwind css"],
     category: "Landing page",
     featured: false,
