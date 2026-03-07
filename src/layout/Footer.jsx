@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
 
           {/* Social */}
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end gap-4">
             <Social />
           </div>
         </div>

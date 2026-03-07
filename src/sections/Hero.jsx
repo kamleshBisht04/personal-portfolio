@@ -57,7 +57,7 @@ const Hero = () => {
               </AnimatedBorderButton>
             </div>
             {/* social links */}
-            <div className="animate-fade-in animation-delay-400 flex items-center gap-4">
+            <div className="animate-fade-in animation-delay-400 flex items-center gap-6">
               <span className="text-muted-foreground text-sm">Follow me: </span>
               <Social />
             </div>

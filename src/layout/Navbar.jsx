@@ -1,6 +1,7 @@
 import { Menu, X, Mail } from "lucide-react";
 import { navLinks } from "@/constant/const";
 import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 import Button from "@/components/Button";
 import Logo from "@/components/Logo";
 
@@ -23,7 +24,12 @@ const Navbar = () => {
         isScrolled ? "glass-strong" : "bg-transparent"
       }`}
     >
-      <nav className="container-custom mx-auto flex items-center justify-between">
+      <motion.nav
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="container-custom mx-auto flex items-center justify-between"
+      >
         {/* Logo */}
         <Logo />
 
@@ -47,7 +53,7 @@ const Navbar = () => {
           <a href="#contact">
             <Button size="sm">
               Hire Me
-              <Mail size={16} className="text-[#F3E3D0] " />
+              <Mail size={16} className="text-[#F3E3D0]" />
             </Button>
           </a>
         </div>
@@ -55,11 +61,11 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-          className="text-foreground hover:bg-primary/5 mr-3 flex h-10 w-10 items-center justify-center rounded-full transition-all duration-200 active:scale-90 md:hidden"
+          className="text-foreground hover:bg-primary/5  flex h-10 w-10 items-center justify-center rounded-full transition-all duration-200 active:scale-90 md:hidden"
         >
           {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
-      </nav>
+      </motion.nav>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (

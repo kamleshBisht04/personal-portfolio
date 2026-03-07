@@ -58,7 +58,7 @@ const Projects = () => {
             {visibleProjects.map((project) => (
               <div
                 key={project.title}
-                className="group glass relative overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
+                className="group glass relative animate-fade-in animation-delay-200 overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">

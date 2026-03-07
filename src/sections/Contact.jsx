@@ -30,7 +30,7 @@ const Contact = () => {
     <section id="contact" className="relative overflow-hidden py-24">
       <div className="container-custom relative z-10">
         {/* section header  */}
-        <div className="mx-auto mb-10 max-w-3xl text-center">
+        <div className="animate-fade-in animation-delay-100 mx-auto mb-10 max-w-3xl text-center">
           <span className="text-primary text-xl font-semibold tracking-wider uppercase">
             Contact
           </span>
@@ -47,9 +47,9 @@ const Contact = () => {
         </div>
 
         {/* contact layout */}
-        <div className="mx-auto grid max-w-6xl gap-28 md:grid-cols-2">
+        <div className="animate-fade-in animation-delay-300 mx-auto grid max-w-6xl gap-28 md:grid-cols-2">
           {/* contact info */}
-          <div className="space-y-8">
+          <div className=" space-y-8">
             <div className="glass flex items-center gap-4 rounded-2xl p-4">
               <Mail className="text-primary h-6 w-6" />
               <div>
