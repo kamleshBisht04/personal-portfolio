@@ -35,7 +35,6 @@ import {
   SiVite,
 } from "react-icons/si";
 
-
 export const navLinks = [
   { href: "#", label: "Home" },
   { href: "#about", label: "About" },
@@ -45,12 +44,11 @@ export const navLinks = [
 
 export const socialLinks = [
   { icon: Github, href: "https://github.com/kamleshBisht04" },
-  { icon: Linkedin, href: "kamleshBisht04@gmail.com" },
-  { icon: Mail, href: "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/kamleshbisht04/" },
+  { icon: Mail, href: "mailto:kamleshbisht04@gmail.com" },
 ];
 
-
-// hero section data 
+// hero section data
 export const skillsData = [
   // ---------------- FRONTEND ----------------
   { name: "React", icon: FaReact, color: "#61DAFB", category: "Frontend" },
@@ -142,7 +140,6 @@ export const highlights = [
       "Staying ahead with the latest technologies and best practices.",
   },
 ];
-
 
 // project data
 
