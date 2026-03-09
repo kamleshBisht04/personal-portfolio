@@ -51,10 +51,12 @@ const Hero = () => {
                   <MoveRight className="h-5 w-5" />
                 </Button>
               </a>
-              <AnimatedBorderButton>
-                <Download className="h-5 w-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="/kamleshResume.pdf" download>
+                <AnimatedBorderButton>
+                  <Download className="h-5 w-5" href="./kamleshResume.pdf" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
             {/* social links */}
             <div className="animate-fade-in animation-delay-400 flex items-center gap-6">
