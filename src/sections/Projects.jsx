@@ -23,7 +23,7 @@ const Projects = () => {
 
   return (
     <>
-       <hr className="my-10 text-gray-700/50" />
+      <hr className="my-10 text-gray-700/50" />
       <section
         id="projects"
         className="relative overflow-hidden py-24"
@@ -58,7 +58,7 @@ const Projects = () => {
             {visibleProjects.map((project) => (
               <div
                 key={project.title}
-                className="group glass relative animate-fade-in animation-delay-200 overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
+                className="group glass animate-fade-in animation-delay-200 relative overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1"
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
@@ -73,7 +73,7 @@ const Projects = () => {
                 </div>
 
                 {/* Hover Links */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 transition duration-300 group-hover:opacity-100">
+                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-100 transition duration-300 md:opacity-0 md:group-hover:opacity-100">
                   <a
                     href={project.demoUrl}
                     target="_blank"

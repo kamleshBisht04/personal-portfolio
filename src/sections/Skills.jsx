@@ -30,17 +30,19 @@ const Skills = () => {
                     return (
                       <div
                         key={idx}
-                        className="group relative flex items-center gap-3"
+                        className="group relative flex flex-col items-center gap-2 sm:flex-row sm:items-center sm:gap-3"
                       >
-                        <div className="from-primary/60 absolute top-3 -left-6 h-px w-6 bg-gradient-to-r to-transparent" />
-                        <span className="rounded-full bg-white p-[5px]">
+                        <div className="from-primary/60 absolute top-3 -left-6 hidden h-px w-6 bg-gradient-to-r to-transparent sm:block" />
+
+                        <span className="shrink-0 rounded-full bg-white p-[5px]">
                           <Icon
                             size={22}
                             style={{ color: skill.color }}
                             className="transition group-hover:scale-110"
                           />
                         </span>
-                        <span className="group-hover:text-primary text-md font-medium transition">
+
+                        <span className="md:text-md group-hover:text-primary text-center text-sm font-medium transition sm:text-left">
                           {skill.name}
                         </span>
                       </div>
