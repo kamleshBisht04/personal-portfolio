@@ -167,7 +167,7 @@ export const projects = [
     tags: ["React", "Context API", "firebase", "Hooks", "CSS"],
     category: "Frontend",
     featured: false,
-    demoUrl: "https://intellect-quiz.netlify.app/",
+    demoUrl: "https://intellect-quiz-app.netlify.app/",
     githubUrl: "https://github.com/kamleshBisht04/React-quiz-app",
   },
   {
