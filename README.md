@@ -1,19 +1,84 @@
-# React + Vite
+# 🚀 Kamlesh Bisht - React Frontend Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio repository!  
+This project showcases my skills, projects, and experience as a Frontend Developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Hero Section
 
-## React Compiler
+Hi, I'm **Kamlesh Bisht** 👋  
+A passionate **React Frontend Developer** focused on building modern, responsive, and high-performance web applications.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 💻 Specializing in **React.js & JavaScript (ES6+)**
+- 🎨 Building modern UI with **Tailwind CSS**
+- ⚡ Creating scalable and reusable components
+- 🌐 Passionate about clean code and user experience
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👨‍💻 About Me
 
+I am a frontend developer with strong knowledge of **React.js, JavaScript, and modern UI development**.  
+I enjoy turning ideas into real-world web applications with clean, efficient code.
 
-# COMPLETING THE UI 
+- 🔭 Currently improving my **React & JavaScript skills**
+- 🌱 Learning **advanced frontend architecture**
+- 🎯 Goal: Work as a **Frontend / React Developer**
+
+---
+
+## 🛠️ Skills
+
+### 💻 Programming Languages
+- JavaScript (ES6+)
+- Java
+- Python
+
+### ⚛️ Frontend Development
+- React.js
+- HTML5
+- CSS3
+- Tailwind CSS
+- Responsive Design
+
+### 🔧 Tools & Technologies
+- Git & GitHub
+- VS Code
+- REST APIs
+- Redux / Context API
+
+---
+
+## 📂 Projects
+
+### 🍿 UsePopcorn Movie App
+- Movie search and watchlist application
+- Built with React and API integration
+- Features: movie search, rating, watchlist
+
+### 🛒 Food Delivery App
+- Modern food ordering UI
+- React + Tailwind CSS
+- Cart and order management
+
+### 🌐 Portfolio Website
+- Personal portfolio website
+- Fully responsive UI
+- Smooth animations and modern design
+
+---
+
+## 📫 Contact Me
+
+📧 Email: kamleshbisht04@gmail.com  
+
+💼 LinkedIn:  
+https://www.linkedin.com/in/kamleshbisht04/
+
+💻 GitHub:  
+https://github.com/kamleshBisht04
+
+---
+
+⭐ If you like this project, please consider giving it a star!
