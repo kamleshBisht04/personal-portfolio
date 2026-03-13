@@ -4,6 +4,8 @@ Welcome to my personal portfolio repository!
 This project showcases my skills, projects, and experience as a Frontend Developer.
 
 ---
+![1](https://github.com/user-attachments/assets/4725de0e-fdf8-4b9b-874b-8544d54df502)
+
 
 ## 🌟 Hero Section
 
@@ -16,6 +18,8 @@ A passionate **React Frontend Developer** focused on building modern, responsive
 - 🌐 Passionate about clean code and user experience
 
 ---
+![2](https://github.com/user-attachments/assets/41a32d47-72ee-4250-871f-9bdf2ca20ad9)
+
 
 ## 👨‍💻 About Me
 
@@ -29,6 +33,8 @@ I enjoy turning ideas into real-world web applications with clean, efficient cod
 ---
 
 ## 🛠️ Skills
+![4](https://github.com/user-attachments/assets/92e404b1-5968-4cc6-9d48-2613c1beb2f4)
+
 
 ### 💻 Programming Languages
 - JavaScript (ES6+)
@@ -49,6 +55,8 @@ I enjoy turning ideas into real-world web applications with clean, efficient cod
 - Redux / Context API
 
 ---
+![3](https://github.com/user-attachments/assets/8a367cc1-183c-4217-bf58-eb81b24c02aa)
+
 
 ## 📂 Projects
 
