@@ -7,7 +7,7 @@ import Social from "../components/Social";
 
 const Hero = () => {
   return (
-    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden">
+    <section className="relative flex min-h-screen items-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
@@ -15,14 +15,14 @@ const Hero = () => {
           alt="Hero image"
           className="h-full w-full object-cover opacity-30"
         />
-        <div className="from-background/20 via-background/80 to-background absolute inset-0 bg-gradient-to-b" />
+        <div className="from background/20 via-background/80 to-background absolute inset-0 bg-gradient-to-b" />
       </div>
 
       {/* Green dots */}
       <ParticlesBackground />
       {/* Content */}
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 pt-32 pb-20">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+      <div className="container-custom relative z-10 mx-auto w-full px-6  pt-32 pb-20">
+        <div className="gap:12 grid items-center lg:grid-cols-2">
           {/* left column -Text section */}
           <div className="space-y-8">
             <div className="animate-fade-in">
@@ -67,7 +67,7 @@ const Hero = () => {
           {/* right column - profile section */}
           <div className="animation-fade-in relative py-8">
             {/* profile image*/}
-            <div className="animate-fade-in animation-delay-200 relative mx-auto max-w-[18rem] py-10">
+            <div className="animate-fade-in mx-w-xs animation-delay-200 relative mx-auto max-w-[18rem] py-10">
               <div className="glass glass-border glow-border relative rounded-2xl p-2">
                 <div className="from-primary/20 to-primary/10 absolute inset-0 animate-pulse rounded-3xl bg-gradient-to-br via-transparent" />
 
