@@ -21,7 +21,7 @@ const Hero = () => {
       {/* Green dots */}
       <ParticlesBackground />
       {/* Content */}
-      <div className="mx-auto max-w-screen-2xl px-4 pt-32 pb-20 sm:px-6 md:px-10 lg:px-16">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 pt-32 pb-20">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* left column -Text section */}
           <div className="space-y-8">
