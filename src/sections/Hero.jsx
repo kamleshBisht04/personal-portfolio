@@ -28,19 +28,20 @@ const Hero = () => {
             <div className="animate-fade-in">
               <span className="glass text-primary inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm">
                 <span className="bg-primary h-2 w-2 animate-pulse rounded-full" />
-                Software Engineer • React Devloper
+                Software Engineer • MERN Stack Developer
               </span>
             </div>
             {/* headline  */}
             <div className="space-y-4">
-              <h1 className="animate-fade-in animation-delay-100 text-4xl leading-tight font-semibold md:text-5xl lg:text-6xl">
-                Fuelled by Curiosity Powered by
-                <span className="text-primary glow-text"> React</span>
+              <h1 className="animate-fade-in animation-delay-100 max-w-5xl text-4xl leading-tight font-semibold lg:text-6xl">
+                Powered by curiosity, built with
+                <span className="text-primary glow-text"> MERN</span>
               </h1>
               <p className="text-muted-foreground animate-fade-in animation-delay-200 max-w-lg text-lg">
-                Hi, I'm Kamlesh — a passionate Software Engineer specializing in
-                React and JavaScript. I focus on building responsive, scalable,
-                and modern web applications with clean and efficient code.
+                Hi, I'm Kamlesh — a passionate MERN Stack Developer specializing
+                in MongoDB, Express, React, and Node.js. I focus on building
+                responsive, scalable, and modern web applications with clean,
+                efficient, and production-ready code.
               </p>
             </div>
             {/* CTAs */}
@@ -92,7 +93,7 @@ const Hero = () => {
                     <div className="mr-2 inline-block h-2.5 w-2.5 animate-pulse rounded-full bg-green-500" />
 
                     <span className="text-primary text-sm font-bold">
-                      React Devloper
+                      MERN Stack Developer
                     </span>
                   </div>
                 </div>
