@@ -145,12 +145,33 @@ export const highlights = [
 
 export const projects = [
   {
+    id: 0,
+    title: "GreenCart",
+    slug: "greencart",
+    description:
+      "A modern full-stack e-commerce platform for grocery shopping with user authentication, cart management, secure checkout experience, and integrated Razorpay payment gateway for seamless transactions.",
+    image: "/projects/greencart.png",
+    tags: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Payment system",
+      "Tailwind CSS ",
+    ],
+    category: "Full Stack",
+    featured: true,
+    demoUrl: "https://greencart-eta-sage.vercel.app/",
+    githubUrl: "https://github.com/kamleshBisht04/GreenCart",
+  },
+  {
     id: 1,
     title: "Eatigo",
     slug: "eatigo",
     description:
       "A modern restaurant booking platform with real-time availability, responsive UI, and seamless reservation experience.",
-    image: "/projects/eatigo.jpg",
+    image: "/projects/eatigo.png",
     tags: ["React", "Node.js", "React-Router", "Tailwind CSS"],
     category: "Frontend",
     featured: true,
