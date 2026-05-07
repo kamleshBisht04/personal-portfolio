@@ -6,6 +6,7 @@ import Skills from "@/sections/Skills";
 import Projects from "@/sections/Projects";
 import Footer from "@/layout/Footer";
 import { Toaster } from "react-hot-toast";
+import GithubHeatmap from "./sections/GithubHeatmap";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <About />
         <Projects />
         <Skills />
+        <GithubHeatmap />
         <Contact />
       </main>
       <Footer />
