@@ -14,8 +14,9 @@ const Footer = () => {
           <div className="flex flex-col items-center gap-3 md:items-start">
             <Logo />
             <p className="text-muted-foreground max-w-xs text-sm">
-              Crafting modern, fast and scalable web applications using React,
-              JavaScript and modern web technologies.
+              Crafting modern, fast, and scalable web applications using the
+              MERN Stack. Passionate about building full-stack solutions with
+              clean architecture and user-focused design.
             </p>
           </div>
 
@@ -36,15 +37,15 @@ const Footer = () => {
           </div>
 
           {/* Social */}
-          <div className="flex justify-center md:justify-end gap-4">
+          <div className="flex justify-center gap-4 md:justify-end">
             <Social />
           </div>
         </div>
 
         {/* Bottom Section */}
         <div className="text-muted-foreground mt-12 border-t border-white/10 pt-6 text-center text-sm">
-          © {new Date().getFullYear()} Kamlesh Bisht • Built with React &
-          Tailwind
+          © {new Date().getFullYear()} Kamlesh Bisht All rights
+          reserved. • Crafted with MERN Stack
         </div>
       </div>
     </footer>

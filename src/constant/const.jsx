@@ -19,6 +19,10 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaChrome,
+  FaCode,
+  FaLock,
+  FaShieldAlt,
+  FaProjectDiagram,
 } from "react-icons/fa";
 
 import {
@@ -33,6 +37,13 @@ import {
   SiFramer,
   SiWebpack,
   SiVite,
+  SiExpress,
+  SiMongodb,
+  SiJsonwebtokens,
+  SiRazorpay,
+  SiPostman,
+  SiCloudinary,
+  SiFiles,
 } from "react-icons/si";
 
 export const navLinks = [
@@ -50,7 +61,7 @@ export const socialLinks = [
 
 // hero section data
 export const skillsData = [
-  // ---------------- FRONTEND ----------------
+  //  FRONTEND 
   { name: "React", icon: FaReact, color: "#61DAFB", category: "Frontend" },
   { name: "JavaScript", icon: FaJs, color: "#F7DF1E", category: "Frontend" },
   { name: "HTML5", icon: FaHtml5, color: "#E34F26", category: "Frontend" },
@@ -69,7 +80,6 @@ export const skillsData = [
     category: "Frontend",
   },
   { name: "Axios", icon: SiAxios, color: "#5A29E4", category: "Frontend" },
-  { name: "Fetch API", icon: FaJs, color: "#F7DF1E", category: "Frontend" },
   {
     name: "Framer Motion",
     icon: SiFramer,
@@ -77,13 +87,20 @@ export const skillsData = [
     category: "Frontend",
   },
 
-  // ---------------- BACKEND ----------------
+  //  BACKEND 
   { name: "Node.js", icon: FaNodeJs, color: "#339933", category: "Backend" },
+  {
+    name: "Express.js",
+    icon: SiExpress,
+    color: "#000000",
+    category: "Backend",
+  },
   { name: "Java", icon: FaJava, color: "#007396", category: "Backend" },
   { name: "Python", icon: FaPython, color: "#3776AB", category: "Backend" },
   { name: "Firebase", icon: SiFirebase, color: "#FFCA28", category: "Backend" },
 
-  // ---------------- DATABASE ----------------
+  //  DATABASE 
+  { name: "MongoDB", icon: SiMongodb, color: "#47A248", category: "Database" },
   { name: "MySQL", icon: SiMysql, color: "#4479A1", category: "Database" },
   {
     name: "PostgreSQL",
@@ -92,18 +109,60 @@ export const skillsData = [
     category: "Database",
   },
 
-  // ---------------- TOOLS ----------------
+  //  FULL STACK 
+  {
+    name: "MERN Stack",
+    icon: FaReact,
+    color: "#00C896",
+    category: "Full Stack",
+  },
+  { name: "REST APIs", icon: FaCode, color: "#4CAF50", category: "Full Stack" },
+
+  //  AUTH & SECURITY 
+  {
+    name: "JWT Authentication",
+    icon: SiJsonwebtokens,
+    color: "#000000",
+    category: "Backend",
+  },
+  {
+    name: "Cookies (HTTP-only)",
+    icon: FaLock,
+    color: "#4CAF50",
+    category: "Backend",
+  },
+  {
+    name: "Security & Auth",
+    icon: FaShieldAlt,
+    color: "#FF5722",
+    category: "Backend",
+  },
+
+  //  ARCHITECTURE 
+  {
+    name: "MVC Architecture",
+    icon: FaProjectDiagram,
+    color: "#3F51B5",
+    category: "Backend",
+  },
+
+  // FILE & MEDIA 
+  {
+    name: "Cloudinary",
+    icon: SiCloudinary,
+    color: "#3448C5",
+    category: "Backend",
+  },
+  { name: "Multer", icon: SiFiles, color: "#FF9800", category: "Backend" },
+
+  //  TOOLS 
   { name: "Git", icon: FaGitAlt, color: "#F05032", category: "Tools" },
   { name: "GitHub", icon: FaGithub, color: "#000000", category: "Tools" },
+  { name: "Postman", icon: SiPostman, color: "#FF6C37", category: "Tools" },
   { name: "Vercel", icon: SiVercel, color: "#000000", category: "Tools" },
   { name: "Netlify", icon: SiNetlify, color: "#00C7B7", category: "Tools" },
   { name: "Vite", icon: SiVite, color: "#646CFF", category: "Tools" },
-  {
-    name: "Webpack (Basic)",
-    icon: SiWebpack,
-    color: "#8DD6F9",
-    category: "Tools",
-  },
+  { name: "Webpack", icon: SiWebpack, color: "#8DD6F9", category: "Tools" },
   {
     name: "Chrome DevTools",
     icon: FaChrome,
