@@ -1,10 +1,15 @@
-import {GitHubCalendar} from "react-github-calendar";
+import { GitHubCalendar } from "react-github-calendar";
 
 const GithubHeatmap = () => {
   return (
-    <div className="flex justify-center rounded-xl border border-green-500/30 bg-[#0d1f14] p-6">
-      <GitHubCalendar username="kamleshBisht04" colorScheme="dark" />
-    </div>
+    <>
+      <h1 className="text-center text-xl font-bold text-white/70 mb-6 md:text-2xl">
+        GitHub Contributions
+      </h1>
+      <div className="ml-[18rem] flex max-w-6xl items-center justify-center rounded-xl border bg-black/80 p-6">
+        <GitHubCalendar username="kamleshBisht04" colorScheme="dark" />
+      </div>
+    </>
   );
 };
 
