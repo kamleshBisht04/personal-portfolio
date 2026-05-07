@@ -49,7 +49,7 @@ const Contact = () => {
         {/* contact layout */}
         <div className="animate-fade-in animation-delay-300 mx-auto grid max-w-6xl gap-28 md:grid-cols-2">
           {/* contact info */}
-          <div className=" space-y-8">
+          <div className="space-y-8">
             <div className="glass flex items-center gap-4 rounded-2xl p-4">
               <Mail className="text-primary h-6 w-6" />
               <div>
