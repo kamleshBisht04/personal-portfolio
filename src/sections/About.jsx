@@ -25,23 +25,25 @@ const About = () => {
 
             <div className="animate-fade-in animation-delay-200 text-muted-foreground space-y-4">
               <p>
-                I'm a passionate Frontend Developer focused on building modern,
-                responsive, and user-friendly web applications. I enjoy turning
-                ideas into interactive digital experiences using React and
-                JavaScript.
+                I'm a passionate MERN Stack Developer focused on building
+                modern, responsive, and user-friendly web applications. I enjoy
+                turning ideas into full-stack digital experiences using MongoDB,
+                Express, React, and Node.js.
               </p>
 
               <p>
                 As a fresher, I am constantly learning and improving my skills
-                in React, Tailwind CSS, and modern web technologies. I believe
-                in writing clean code and building projects that are both
+                in React, Node.js, Express, MongoDB, and Tailwind CSS. I also
+                work with tools like Git, GitHub, REST APIs, and Postman to
+                build and test scalable applications. I believe in writing
+                clean, maintainable code and creating projects that are both
                 visually appealing and technically strong.
               </p>
 
               <p>
-                My goal is to grow as a developer by contributing to impactful
-                projects and continuously challenging myself with new
-                technologies.
+                My goal is to grow as a full-stack developer by contributing to
+                impactful projects, solving real-world problems, and
+                continuously exploring modern web technologies.
               </p>
             </div>
 
